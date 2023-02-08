@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="es-bg-blue">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -17,8 +17,8 @@
   <title>Findy</title>
 </head>
 
-<body class="es-bg-blue">
-  <header>
+<body>
+  <header class="gray-bg">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top findy-navbar bg-pink">
       <div class="container">
         <a class="navbar-bars d-sm-block d-md-none" href="#" data-toggle="modal" data-target="#mobileModal">
@@ -80,7 +80,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="gray-bg position-relative">
     <div class="container">
       <div class="es-back-btn-wrapper">
         <button class="btn">
@@ -88,321 +88,58 @@
           <span class="es-back-btn-text">Назад</span>
         </button>
       </div>
-      <div class="categories-nav">
-        <a class="category-link active" href="#" class="btn">Bath & Body Works</a>
-        <a class="category-link" href="#" class="btn">Bath & Body Works</a>
-        <a class="category-link" href="#" class="btn">Bath & Body Works</a>
-        <a class="category-link" href="#" class="btn">Bath & Body Works</a>
-        <a class="category-link" href="#" class="btn">Bath & Body Works</a>
-      </div>
-      <div class="es-filter-nav d-flex align-items-center justify-content-between">
-        <div>
-          <button class="btn text-uppercase filter-btn border-0 active">витамины</button>
-          <button class="btn text-uppercase filter-btn border-0">от простуды</button>
-          <button class="btn text-uppercase filter-btn border-0">лейкопластыри</button>
-        </div>
-        <div class="select-wrapper align-items-center">
-          <label class="filter-label text-nowrap" for="filter-type">Сортировать по:</label>
-          <select id="filter-type" id="" aria-label="Default select example">
-            <option selected>Популярности</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-      </div>
-      <div class="product-list">
-        <div class="row">
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="far fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn">В корзину</button>
-              </div>
+      <div class="row">
+        <div class="col-4  pb-120">
+          <ul class="nav nav-tabs es-nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab-btn active border-0 tab-btn page-main-title bg-transparent" id="home-tab" data-toggle="tab"
+                data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab-btn border-0 tab-btn page-main-title bg-transparent" id="profile-tab" data-toggle="tab"
+                data-target="#profile" type="button" role="tab" aria-controls="profile"
+                aria-selected="false">Profile</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              Мы занимаемся профессиональной косметикой более 10 лет и для наших любимых клиентов выбираем только все
+              самое лучшие.
+              <br>
+              Миссия нашей компании - уверенность женщине в силе собственной красоты, возможность выразить свою
+              индивидуальность.
+              <br>
+              Наш интернет магазин предлагает качественную профессиональную косметику. Мы заботимся о своей репутации,
+              поддерживаем ее, а потому тщательно подходим к выбору партнеров. На сайте нашего магазина представлены
+              ведущие мировые бренды косметики. Весь представленный товар соответствуют высоким стандартам качества
+              стран ЕС и США.
+              <br>
+              Ассортимент нашего магазина составляет более 20 000 единиц товара ведущих брендов Австралии, США, ЕС и
+              других стран.
+            </div>
+            <div class="tab-pane fade"  id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              Мы занимаемся профессиональной косметикой более 10 лет и для наших любимых клиентов выбираем только все
+              самое лучшие.
+              <br>
+              Миссия нашей компании - уверенность женщине в силе собственной красоты, возможность выразить свою
+              индивидуальность.
+              <br>
+              Наш интернет магазин предлагает качественную профессиональную косметику. Мы заботимся о своей репутации,
+              поддерживаем ее, а потому тщательно подходим к выбору партнеров. На сайте нашего магазина представлены
+              ведущие мировые бренды косметики. Весь представленный товар соответствуют высоким стандартам качества
+              стран ЕС и США.
             </div>
           </div>
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="fas fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn btn-minus">-</button>
-                <span class="product-quantity">3</span>
-                <button class="btn findy-btn btn-plus">+</button>
-              </div>
-              <button class="btn findy-btn d-none">В корзину</button>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="far fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="far fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="far fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="far fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="far fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="product-card">
-              <div class="product-options">
-                <span class="product-flag">Товар недели</span>
-                <a href="#" class="favorite-btn ml-auto">
-                  <i class="far fa-star"></i>
-                </a>
-              </div>
-              <div class="product-img">
-                <a href="#">
-                  <img src="img/product.jpg" class="img-fluid" />
-                </a>
-              </div>
-              <div class="product-detail">
-                <div class="product-category">
-                  <a href="#">Крем для загара</a>
-                </div>
-                <div class="product-name">
-                  <a href="#">Sun screen 35</a>
-                </div>
-                <div class="product-price">
-                  <div class="product-real-price">
-                    <span class="price">56 200</span>
-                    <span class="currency">UZS</span>
-                  </div>
-                  <div class="product-discount-price">
-                    56 200 UZS
-                  </div>
-                </div>
-              </div>
-              <div class="product-controls">
-                <button class="btn findy-btn">В корзину</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
+        </div>
+      </div>
+    </div>
+    <div class="about-map position-absolute">
+      <img class="company-image" src="/img/company.jpg" alt="company photo">
     </div>
   </main>
 
-  <footer>
+  <footer class="gray-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-9">
@@ -642,7 +379,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
-
+</body>
 </body>
 
 </html>

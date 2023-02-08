@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
   <link rel="stylesheet" href="fonts/stylesheet.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -91,54 +92,30 @@
         <div class="col-5">
           <div class="pr-imgs-slider">
             <div class="pr-img-slider">
-              <div class="img-wrapper">
-                <img class="" src="/img/product.jpg" alt="">
-                <div class="product-options">
-                  <span class="product-flag">Товар недели</span>
-                  <a href="#" class="favorite-btn ml-auto">
-                    <i class="far fa-star"></i>
-                  </a>
-                </div>
+              <div class="main-img">
+                <img class="img-fluid" src="/img/product.jpg" alt="">
               </div>
-              <div class="img-wrapper">
-                <div class="product-options">
-                  <span class="product-flag">Товар недели</span>
-                  <a href="#" class="favorite-btn ml-auto">
-                    <i class="far fa-star"></i>
-                  </a>
-                </div>
-                <img class="" src="/img/product2.jpg" alt="">
+              <div class="main-img">
+                <img class="img-fluid" src="/img/product2.jpg" alt="">
               </div>
-              <div class="img-wrapper">
-                <div class="product-options">
-                  <span class="product-flag">Товар недели</span>
-                  <a href="#" class="favorite-btn ml-auto">
-                    <i class="far fa-star"></i>
-                  </a>
-                </div>
-                <img class="" src="/img/product.jpg" alt="">
+              <div class="main-img">
+                <img class="img-fluid" src="/img/product.jpg" alt="">
               </div>
-              <div class="img-wrapper">
-                <div class="product-options">
-                  <span class="product-flag">Товар недели</span>
-                  <a href="#" class="favorite-btn ml-auto">
-                    <i class="far fa-star"></i>
-                  </a>
-                </div>
-                <img class="" src="/img/product2.jpg" alt="">
+              <div class="main-img">
+                <img class="img-fluid" src="/img/product2.jpg" alt="">
               </div>
             </div>
             <div class="pr-child-img-slider position-relative">
-              <div class="img-wrapper">
+              <div class="child-img">
                 <img class="img-fluid" src="/img/product.jpg" alt="">
               </div>
-              <div class="img-wrapper">
+              <div class="child-img">
                 <img class="img-fluid" src="/img/product2.jpg" alt="">
               </div>
-              <div class="img-wrapper">
+              <div class="child-img">
                 <img class="img-fluid" src="/img/product.jpg" alt="">
               </div>
-              <div class="img-wrapper">
+              <div class="child-img">
                 <img class="img-fluid" src="/img/product2.jpg" alt="">
               </div>
             </div>
@@ -251,8 +228,8 @@
         </div>
       </div>
       <h2 class="es-subtitle text-left">Главное за неделю</h2>
-      <div class="pr-slider row">
-        <div class="col-6 col-md-3">
+      <div class="pr-slider">
+        <div class="col-6 col-md-3 px-2">
           <div class="product-card">
             <div class="product-options">
               <span class="product-flag">Товар недели</span>
@@ -287,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 px-2">
           <div class="product-card">
             <div class="product-options">
               <span class="product-flag">Товар недели</span>
@@ -322,7 +299,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 px-2">
           <div class="product-card">
             <div class="product-options">
               <span class="product-flag">Товар недели</span>
@@ -357,7 +334,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 px-2">
           <div class="product-card">
             <div class="product-options">
               <span class="product-flag">Товар недели</span>
@@ -392,7 +369,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 px-2">
           <div class="product-card">
             <div class="product-options">
               <span class="product-flag">Товар недели</span>
@@ -671,6 +648,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script type="text/javascript">
@@ -679,24 +657,24 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
         asNavFor: '.pr-child-img-slider',
       });
       $('.pr-child-img-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.pr-img-slider',
+        // centerMode: true,
         dots: false,
         focusOnSelect: true,
-        prevArrow: '<button class="btn es-prev-slick"><img src="/img/slider-right.svg" alt="" /></button>',
-        nextArrow: '<button class="btn es-next-slick"><img src="/img/slider-left.svg" alt="" /></button>',
+        prevArrow: '<button class="btn es-prev-slick"><img src="/img/slider-left.svg" alt="" /></button>',
+        nextArrow: '<button class="btn es-next-slick"><img src="/img/slider-right.svg" alt="" /></button>',
       });
       $('.pr-slider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<button class="btn es-prev-slick"><img src="/img/slider-right.svg" alt="" /></button>',
-        nextArrow: '<button class="btn es-next-slick"><img src="/img/slider-left.svg" alt="" /></button>',
+        prevArrow: '<button class="btn es-prev-slick"><img src="/img/slider-left.svg" alt="" /></button>',
+        nextArrow: '<button class="btn es-next-slick"><img src="/img/slider-right.svg" alt="" /></button>',
       });
     });
   </script>

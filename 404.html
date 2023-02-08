@@ -5,10 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
   <link rel="stylesheet" href="fonts/stylesheet.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -18,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="gray-bg">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top findy-navbar bg-white">
       <div class="container">
         <a class="navbar-bars d-sm-block d-md-none" href="#" data-toggle="modal" data-target="#mobileModal">
@@ -80,127 +78,13 @@
     </nav>
   </header>
 
-  <main class="gray-bg position-relative  pb-120">
+  <main class="gray-bg position-relative error-page d-flex align-items-center justify-content-center">
     <div class="container">
-      <div class="row">
-        <div class="col-5">
-          <form action="#" class="user-checkout-info">
-            <div class="user-checkout-inputs">
-              <div class="es-back-btn-wrapper">
-                <button class="btn">
-                  <img class="es-back-ic" src="/img/ic_back.svg" alt="back">
-                  <span class="es-back-btn-text">Назад</span>
-                </button>
-              </div>
-              <h1 class="es-checkout-title page-main-title">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
-              <h2 class="es-checkout-subtitle">Способ доставки</h2>
-              <ul class="nav nav-tabs es-nav-tabs border-0" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link bg-transparent active border-0 tab-btn pb-10" id="home-tab" data-toggle="tab"
-                    data-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                    aria-selected="true">Курьером</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link bg-transparent border-0 tab-btn pb-10" id="profile-tab" data-toggle="tab"
-                    data-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                    aria-selected="false">Самовывоз</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                  tabindex="0">
-                  <div class="input-container">
-                    <label for="f-name">ФИО</label>
-                    <input type="text" id="f-name" placeholder="Введите Имя" class="form-control">
-                  </div>
-                  <div class="input-container">
-                    <label for="user-phone">Номер телефона</label>
-                    <input id="user-phone" type="text" placeholder="+998__ ___-__-__" class="form-control">
-                  </div>
-                  <div class="input-container address-input">
-                    <label for="user-phone">Адрес</label>
-                    <input id="user-phone" type="text" placeholder="Введите адрес доставки" class="form-control">
-                  </div>
-                  <div class="input-container">
-                    <h3 class="light-grey-text final-address-title">Ваши последние адреса:</h3>
-                    <p class="final-address">ул. Глинки 59А, кв 58</p>
-                    <p class="final-address">ул. Амира Тимура 5, кв 2</p>
-                  </div>
-                  <div class="input-container">
-                    <label for="referance-point">Ориентир</label>
-                    <input type="text" id="referance-point" placeholder="Введите ориентир" class="form-control">
-                  </div>
-                  <div class="input-container">
-                    <label for="comment">Комментарий</label>
-                    <textarea id="comment" class="form-control comment-area"
-                      placeholder="Комментарий к заказу"></textarea>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                  tabindex="0">
-                  <div class="input-container">
-                    <label for="f-name">ФИО</label>
-                    <input type="text" id="f-name" placeholder="Введите Имя" class="form-control">
-                  </div>
-                  <div class="input-container">
-                    <label for="user-phone">Номер телефона</label>
-                    <input id="user-phone" type="text" placeholder="+998__ ___-__-__" class="form-control">
-                  </div>
-                  <h2 class="es-checkout-subtitle">Выберите филиал</h2>
-                  <div class="checkbox-group">
-                    <input type="radio" name="branch" id="checkbox-1" />
-                    <label for="checkbox-1">FINDY “Riviera”</label>
-                    <input type="radio" name="branch" id="checkbox-2" />
-                    <label for="checkbox-2">FINDY “Максим Горький”</label>
-                    <input type="radio" name="branch" id="checkbox-3" />
-                    <label for="checkbox-3">FINDY “Абай”</label>
-                    <input type="radio" name="branch" id="checkbox-4" />
-                    <label for="checkbox-4">FINDY “Бобур”</label>
-                    <input type="radio" name="branch" id="checkbox-5" />
-                    <label for="checkbox-5">FINDY “Ойбек”</label>
-                  </div>
-                </div>
-              </div>
-              <h2 class="es-checkout-subtitle">Оплата</h2>
-              <div class="checkout-options">
-                <div class="toggle-group">
-                  <input type="radio" id="toggle-1" name="toggle" checked />
-                  <label for="toggle-1">Терминал</label>
-                  <input type="radio" id="toggle-2" name="toggle" />
-                  <label for="toggle-2">Онлайн-оплата</label>
-                </div>
-              </div>
-              <h2 class="es-checkout-subtitle">Оплата</h2>
-              <div class="d-flex">
-                <div class="input-container">
-                  <input type="text" id="f-name" placeholder="Ваш промокод" class="form-control user-code-input">
-                </div>
-                <button type="button" class="btn es-gray-btn light-grey-text active">Применить</button>
-              </div>
-            </div>
-            <div class="order-final-details">
-              <div class="order-final-detail mb-3">
-                <h2 class="es-checkout-subtitle mb-0">Оплата</h2>
-                <div>
-                  <span class="es-checkout-subtitle mb-0">0</span>
-                  <span class="currency">UZS</span>
-                </div>
-              </div>
-              <div class="order-final-detail">
-                <h2 class="es-checkout-subtitle mb-0">Итоговая цена:</h2>
-                <div>
-                  <span class="es-checkout-subtitle mb-0">56 022</span>
-                  <span class="currency">UZS</span>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="confirm-order-btn text-decoration-none">Оформить заказ</a>
-          </form>
-        </div>
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-500">404</h1>
+        <p class="text-500 text-20">УПС! что-то пошло не так...</p>
+        <button class="btn rounded-0 es-border btn-hover-black px-4">Начать шопинг</button>
       </div>
-    </div>
-    <div class="checkout-map bg-purple position-absolute">
-
     </div>
   </main>
 
@@ -444,7 +328,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
